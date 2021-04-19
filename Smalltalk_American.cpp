@@ -5,9 +5,9 @@
  *      Author: guest-l9gf4s
  */
 
-#include "./includes/Smalltalk_American.h"
-#include "./includes/Smalltalk.h"
-#include "./includes/constants.h"
+#include "includes/Smalltalk_American.h"
+#include "includes/Smalltalk.h"
+#include "includes/constants.h"
 
 Smalltalk_American::Smalltalk_American(int iPerson) : Smalltalk(AMERICAN,iPerson) {
 }
