@@ -46,16 +46,25 @@ std::vector<std::unique_ptr<Smalltalk>> getPeople(int numBrit,
 
 		//create some watches (as long as number watches <= numb people)
 	if ((unsigned)numWatches <= peopleList.size()) {
-		int l = 0;
-		while (l <= numWatches) {
-			std::unique_ptr<Watch> pW(new Watch());
+		for (int l =0; l < numWatches; l++) {
+			std::unique_ptr<Watch >pWatch(new Watch());
+
+			peopleList[l] -> giveWatch(pWatch);
+
+			//unique_ptr<Watch> pTakenWatch;
+			//if (takeWatch()) {
+				//peopleList[l].get->giveWatch(*pW);
+
+			//}
+
+			//return giveWatch;
+
 			//pW.getTime();
 			//peopleList[l].get()->takeWatch();
 
 
 			//&pW = Smalltalk::pWatch;//givewatch(&pW);
 
-			l++;
 
 		}
 

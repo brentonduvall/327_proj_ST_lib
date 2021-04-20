@@ -9,10 +9,11 @@
 #include "includes/constants.h"
 
 ST_American_DonutEnthusiest::ST_American_DonutEnthusiest(int i) : Smalltalk_American(AMERICAN_DE, iPerson) {
-
+	populatePhrases();
 }
 
 ST_American_DonutEnthusiest::~ST_American_DonutEnthusiest(void) {
+	populatePhrases();
 
 }
 
