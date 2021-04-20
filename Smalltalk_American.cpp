@@ -10,17 +10,22 @@
 #include "includes/constants.h"
 
 Smalltalk_American::Smalltalk_American(int iPerson) : Smalltalk(AMERICAN,iPerson) {
+	populatePhrases();
 }
 
-Smalltalk_American::Smalltalk_American(std::string myNationality,int iPerson) : Smalltalk(myNationality,iPerson) {}
+Smalltalk_American::Smalltalk_American(std::string myNationality,int iPerson) : Smalltalk(myNationality,iPerson) {
+	populatePhrases();
+}
 
 //: nationality(AMERICAN), iPerson(iPerson) {}
+	//populatePhrases();
 
 //Smalltalk_Brit::populatePhrases()  {
 	//mySmalltalk = new vecto
 //}
 
 Smalltalk_American::~Smalltalk_American(void) {
+	populatePhrases();
 
 }
 

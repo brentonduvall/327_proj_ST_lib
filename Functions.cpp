@@ -41,6 +41,7 @@ std::vector<std::unique_ptr<Smalltalk>> getPeople(int numBrit,
 	for (int k = 0; k < numBrit; k++) {
 			std::unique_ptr<ST_American_DonutEnthusiest> DE(new ST_American_DonutEnthusiest(k));
 			peopleList.push_back(move(DE));
+
 		}
 
 		//create some watches (as long as number watches <= numb people)
@@ -48,13 +49,13 @@ std::vector<std::unique_ptr<Smalltalk>> getPeople(int numBrit,
 		int l = 0;
 		while (l <= numWatches) {
 			std::unique_ptr<Watch> pW(new Watch());
-			//&pW = Smalltalk::pWatch;//givewatch(&pW);
-			//Smalltalk::pWatch = &pW;
+			//pW.getTime();
+			//peopleList[l].get()->takeWatch();
 
-			//pW.giveWatch(&pW);
-			//peopleList[l].giveWatch(&pW);
-			//delete pW;
-			//l++
+
+			//&pW = Smalltalk::pWatch;//givewatch(&pW);
+
+			l++;
 
 		}
 

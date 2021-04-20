@@ -23,23 +23,28 @@ Smalltalk::~Smalltalk(void) {
 }
 
 std::string Smalltalk::saySomething() {
-	string person =  iPerson + " ";
-	if (current_phrase == 0) {
-		current_phrase++;
-
-		mySmallTalk[current_phrase%2];
-
-		return  nationality + "" + person + ": " + mySmallTalk[current_phrase%2];
-	}
-
-	if ((unsigned)current_phrase == mySmallTalk.size()) {
+	std::string person =  mySmallTalk[current_phrase];
+	current_phrase++;
+	if(current_phrase == mySmallTalk.size()){
 		current_phrase = 0;
 	}
+	return person;
+//	if (current_phrase == 0) {
+//		current_phrase++;
+//
+//		mySmallTalk[current_phrase%2];
+//
+//		return  nationality + "" + person + ": " + mySmallTalk[current_phrase];
+//	}
+//
+//	if ((unsigned)current_phrase == mySmallTalk.size()) {
+//		current_phrase = 0;
+//	}
 	//current_phrase++;
 	//iPerson++;
 
 
-	return  nationality + "" + person + ": " + mySmallTalk[current_phrase%2];
+	//return  nationality + "" + person + ": " + mySmallTalk[current_phrase];
 }
 
 std::string Smalltalk::getTime() {
